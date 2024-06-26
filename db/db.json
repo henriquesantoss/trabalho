@@ -1,0 +1,46 @@
+{
+  "informacoes": {
+    "nome": "Henrique Santos",
+    "github": "https://github.com/henriquesantoss"
+  },
+  "projetos": [
+    {
+      "id": 1,
+      "titulo": "Trabalho em react",
+      "descricao": "JOKENPO",
+      "repositorio": "https://github.com/henriquesantoss/jokenpo"
+    },
+    {
+      "id": 2,
+      "titulo": "Primeiros em react",
+      "descricao": "Busca de cantores",
+      "repositorio": "https://github.com/henriquesantoss/cantores"
+    },
+    {
+      "id": 3,
+      "titulo": "Projeto",
+      "descricao": "calculadora",
+      "repositorio": "https://github.com/henriquesantoss/Calculadora"
+    }
+  ],
+  "colegas": [
+    {
+      "id": 1,
+      "nome": "Rafael Nascimento Jardim",
+      "github": "https://github.com/Rafaelnjardim",
+      "foto": "foto-rafael.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Vinicius guimaraes",
+      "github": "https://github.com/vinigferreira",
+      "foto": "vinicius.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Rafael Souza",
+      "github": "https://github.com/RafaelSouzaBandeiradeMelo",
+      "foto": "no-avatar.png"
+    }
+  ]
+}

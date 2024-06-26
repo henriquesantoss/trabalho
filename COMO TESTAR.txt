@@ -1,0 +1,8 @@
+PASSOS PRA TESTAR O SITE
+
+1)baixar a pasta e descompactar
+2)entrar na pasta descompactada pelo cmd
+3)baixar o json server pelo seguinte codigo:npm install -g json-server
+4)logo após isso, deverá iniciar o json com o codigo:json-server --watch db.json --port 3000
+5)Verifique se o servidor JSON está rodando corretamente acessando http://localhost:3000 no seu navegador. Deve exibir os dados do arquivo db.json
+6)Abra o arquivo index.html na pasta extraída ou baixe o live server e entre a url do live serve + /public/

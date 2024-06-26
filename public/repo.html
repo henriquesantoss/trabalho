@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Repos</title>
+</head>
+<body>
+  <div class="containers">
+    <header>
+      <h3><a href="../public/index.html">Henrique Santos</a></h3>
+    </header>
+    <div class="secao">
+      <h1 id="repo-title"></h1>
+    </div>
+    <div class="content-repo">
+      <div class="content-profile">
+        <p class="name">Descrição</p>
+        <p class="description" id="repo-description"></p>
+      </div>
+      <div class="information">
+        <div class="content-information">
+          <p class="name">Data de Criação</p>
+          <p class="description" id="repo-created-at"></p>
+        </div>
+      </div>
+      <div class="content-profile-flex">
+        <p class="name">Linguagem:</p>
+        <p class="description" id="repo-language"></p>
+      </div>
+      <div class="content-profile">
+        <p class="name">Link de acesso</p>
+        <a class="hyperLink" id="repo-url" href="#" target="_blank"></a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const repoData = JSON.parse(localStorage.getItem('repoData'));
+      console.log(repoData);
+      if (repoData) {
+        document.getElementById('repo-title').textContent = repoData.name;
+        document.getElementById('repo-description').textContent = repoData.description === 'null' ? 'sem descrição' : repoData.description;
+        document.getElementById('repo-created-at').textContent = new Date(repoData.createdAt).toLocaleDateString();
+        document.getElementById('repo-language').textContent = repoData.language || 'Não especificada';
+        document.getElementById('repo-url').href = repoData.url;
+        document.getElementById('repo-url').textContent = repoData.url;
+      }
+    });
+  </script>
+</body>
+</html>
